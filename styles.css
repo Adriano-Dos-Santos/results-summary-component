@@ -98,6 +98,7 @@ textarea {
     --Gentle-cobalt-blue: hsla(234, 85%, 45%,0.1);
 /* Gradients */
     --Light-slate-blue: hsl(252, 100%, 67%);
+    --Gentle-slate-blue: hsla(252, 100%, 67%, 0.8);
     --Light-royal-blue: hsl(241, 81%, 54%);
     --Violet-blue: hsla(256, 72%, 46%, 1);
     --Persian-blue: hsla(241, 72%, 46%, 0);
@@ -127,36 +128,38 @@ body {
 
 
 main {
-    max-width: 650px;
+    max-width: 675px;
     display: flex;
 }
 .results-section {
     width: 50%;
-    background-image: linear-gradient( var(--Light-slate-blue) 0%, var(--Light-royal-blue) 80%);
+    background-image: linear-gradient( var(--Light-slate-blue) 0%, var(--Light-royal-blue) 70%);
     text-align: center;
     color: white;
     border-radius: 25px;
-    padding: 2em 3em 2.5em 3em;
+    padding: 2em 2.5em 0 2.5em;
+    position: relative;
 }
 
 .results-section h1 {
-    font-size: 1.27rem;
+    font-size: 1.3rem;
+    font-weight: 700;
     color: var(--Light-lavender);
 }
 
 .results-score-section {
-    margin: 1.2em auto;
+    margin: 1.5em auto 1.8em auto;
     background-image: linear-gradient(var(--Violet-blue), var(--Persian-blue));
     border-radius: 50%;
-    width: 170px;
-    height: 170px;
+    width: 190px;
+    height: 190px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .score {
-   font-size: 3rem;
+   font-size: 3.5rem;
    font-weight: 800;
    margin-bottom: -10px;
    color: var(--White);
@@ -179,16 +182,15 @@ main {
     background-color: var(--White);
     padding: 2em 2em 2em 3.5em;
     margin-left: -30px;
-    z-index: -1 ;
     border-radius: 0 25px 25px 0;
 }
 .summary-section h2 {
     font-size: 1.2rem;
-    color: var(--Dark-Blue);
+    color: var(--Dark-gray-blue);
     font-weight: 700;
 }
 .score-summary {
-    margin: 1em 0;
+    margin: 1.2em 0 0.5em 0;
     display: flex;
     flex-direction: column;
     grid-row-gap: 1em;
@@ -237,13 +239,13 @@ main {
 }
 
 button {
-    padding: 0.4em 4em;
+    padding: 0.6em 4.5em;
     background-color: var(--Dark-gray-blue);
     color: var(--White);
     border-radius: 30px;
-    margin-top: 1.1em;
+    margin-top: 1.3em;
 }
 
 button:hover {
-    background-image: linear-gradient(var(--Violet-blue), var(--Light-royal-blue));
+    background-image: linear-gradient(var(--Gentle-slate-blue), var(--Light-royal-blue) 70%);
 }
