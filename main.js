@@ -6,3 +6,4 @@ fetch("./data.json")
       spanElement.textContent = data[i].score;
     }
   });
+//banana
